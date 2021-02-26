@@ -1,13 +1,14 @@
-# NanoSpark
+# NanoSpring
 
-[![danielrincon-m](https://circleci.com/gh/danielrincon-m/AREP_LAB3.svg?style=svg)](https://app.circleci.com/pipelines/github/danielrincon-m/AREP_LAB3)
-[![Heroku](../../Parciales/Primer%20Parcial/img/heroku_long.png)](https://nanospark.herokuapp.com/Apps/register)
+[![danielrincon-m](https://circleci.com/gh/danielrincon-m/AREP_LAB4.svg?style=svg)](https://app.circleci.com/pipelines/github/danielrincon-m/AREP_LAB4)
+[![Heroku](img/heroku_long.png)](https://nanospring.herokuapp.com/nspapp/register)
 
-## Descripción 🎇
+## Descripción ♨️
 
-NanoSpark es un framework web liviano que nos permite desplegar páginas web de manera sencilla y con muy pocas lineas de código,
+NanoSpring es un framework web liviano que nos permite desplegar páginas web de manera sencilla y con muy pocas líneas de código,
 además nos brinda la posibilidad de ver cualquier tipo de archivo en el navegador gracias a su amplia base de datos de
-códigos MimeType. 
+códigos MimeType. Logra esto gracias a las propiedades reflexivas de Java, en donde por medio de anotaciones podemos definir
+que función deseamos ejecutar bajo cierta petición.
 
 ### Prueba de concepto
 
@@ -18,29 +19,30 @@ La prueba de concepto del Framework se divide en dos fases:
 Esta fase trata de mostrar la capacidad del servidor web de devolver recursos estáticos de varios tipos al cliente, 
 para esto, a continuación daremos varios ejemplos de archivos estáticos alojados en el servidor.
 
-- **Imagen / ico**: [Imagen en formato .ico](https://nanospark.herokuapp.com/favicon.ico)
-- **Imagen / png**: [Imagen en formato .png](https://nanospark.herokuapp.com/static/img/future.png)
-- **Script / JavaScript**: [Archivo de texto en formato .js](https://nanospark.herokuapp.com/static/js/get.js)
-- **Script / css**: [Archivo de texto en formato .css](https://nanospark.herokuapp.com/static/css/main.css)
+- **Imagen / ico**: [Imagen en formato .ico](https://nanospring.herokuapp.com/favicon.ico)
+- **Imagen / png**: [Imagen en formato .png](https://nanospring.herokuapp.com/static/img/future.png)
+- **Script / JavaScript**: [Archivo de texto en formato .js](https://nanospring.herokuapp.com/static/js/get.js)
+- **Script / css**: [Archivo de texto en formato .css](https://nanospring.herokuapp.com/static/css/main.css)
 
-Una vez confirmamos que nuestro servidor web era capaz de devolverle al cliente archivos de cualquier tipo al cliente, continuamos
-con la segunda fase, en donde realizamos una aplicación web funcional utilizando nuestro Framework.
+Una vez confirmamos que nuestro servidor web es capaz de enviar archivos de cualquier tipo al cliente y que este los puede
+interpretar de manera correcta, continuamos con la segunda fase, en donde realizamos una aplicación web funcional 
+utilizando nuestro Framework.
 
 #### Segunda Fase
 
-Nuestra aplicación web es un simple registro de usuarios, en donde ponen sus datos básicos (nombre, documento, dirección y teléfono),
-estos registros se realizan en una base de datos PostgreSQL de manera asíncrona por medio de JavaScript. La aplicación consta de dos partes:
+Nuestra aplicación web es un simple registro de usuarios, en al ingresar sus datos básicos (nombre, documento, dirección y teléfono),
+los mismos se almacenan en una base de datos PostgreSQL de manera asíncrona por medio de JavaScript. La aplicación consta de dos partes:
 
-- Un formulario de inscripción de usuarios el cual se puede consultar [aquí.](https://nanospark.herokuapp.com/Apps/register)
+- Un formulario de inscripción de usuarios el cual se puede consultar [aquí.](https://nanospring.herokuapp.com/nspapp/register)
 - Una página web en donde se pueden consultar los usuarios registrados hasta el momento, la cual se puede consultar
-[aquí](https://nanospark.herokuapp.com/Apps/get)
+[aquí](https://nanospring.herokuapp.com/nspapp/get)
 
-De esta forma finaliza nuestra prueba de concepto, todos los servicios web están corriendo sobre el mini framework "NanoSpark". Como pudimos
+De esta forma finaliza nuestra prueba de concepto, todos los servicios web están corriendo sobre el mini framework "NanoSpring". Como pudimos
 observar ya se encuentra en una etapa bastante funcional, y está preparado para correr aplicaciones más complejas.
 
 ### Cómo utilizar el programa
 
-Al abrir el [sitio web de registro](https://nanospark.herokuapp.com/Apps/register) nos encontraremos con una pantalla 
+Al abrir el [sitio web de registro](https://nanospring.herokuapp.com/nspapp/register) nos encontraremos con una pantalla 
 como esta:
 
 ![Pantalla Registro](img/PantallaRegistro.jpg)
@@ -57,7 +59,7 @@ en la aplicación.
 --
 
 Luego de esto nos gustaría verificar si efectivamente quedamos registrados, para ello, podremos ir a la
-[página de consulta](https://nanospark.herokuapp.com/Apps/get), en donde nos encontraremos una pantalla como esta:
+[página de consulta](https://nanospring.herokuapp.com/nspapp/get), en donde nos encontraremos una pantalla como esta:
 
 ![Pantalla Consulta](img/PantallaConsulta.jpg)
 
@@ -67,7 +69,7 @@ Luego de esto nos gustaría verificar si efectivamente quedamos registrados, par
 
 ## Cómo obtener el proyecto 📥
 
-### Prerequisitos
+### Prerrequisitos
 
 Asegúrese de tener git instalado en su máquina, lo puede hacer desde la [página oficial][gitLink].
 
@@ -76,14 +78,14 @@ Asegúrese de tener git instalado en su máquina, lo puede hacer desde la [pági
 Clone el proyecto utilizando el siguiente comando:
 
 ```
-git clone https://github.com/danielrincon-m/AREP_LAB3.git
+git clone https://github.com/danielrincon-m/AREP_LAB4.git
 ```
 
 ## Correr las pruebas unitarias 🧪
 
-### Prerequisitos
+### Prerrequisitos
 
-Un IDE que soporte proyectos Java, o una instalación de Maven en su sistema, puebe obtenerlo desde
+Un IDE que soporte proyectos Java, o una instalación de Maven en su sistema, puede obtenerlo desde
 la [página oficial.][mvnLink]
 
 ### Ejecución de pruebas

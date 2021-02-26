@@ -5,6 +5,10 @@ import edu.eci.arep.httpserver.Response;
 import edu.eci.arep.nanospring.NanoSpringApplication;
 import edu.eci.arep.nanospring.RequestMapping;
 
+/**
+ * Aquí se define un servicio Web, para cada una de las rutas de la aplicación, definimos una función correspondiente
+ * que retorna un string con la respuesta que se le debe dar al cliente.
+ */
 public class HelloWebService {
     @RequestMapping("/register")
     public static String register(Request req, Response res) {
