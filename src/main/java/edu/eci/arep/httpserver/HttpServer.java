@@ -127,7 +127,8 @@ public class HttpServer {
      * @return La respuesta brindada por el handler
      */
     private Response useHandler(Request request) {
-        String prefix = "/" + request.getRequestURL().split("/")[1];
+        String url = request.getRequestURL();
+        String prefix = url.equals("/") ? "" : "/" + url.split("/")[1];
         if (handlers.containsKey(prefix)) {
             System.out.println(prefix + " handler");
             return handlers.get(prefix).handle(prefix, request);
