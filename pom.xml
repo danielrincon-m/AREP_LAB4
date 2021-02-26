@@ -27,6 +27,18 @@
     </dependency>
 
     <dependency>
+      <groupId>org.postgresql</groupId>
+      <artifactId>postgresql</artifactId>
+      <version>42.2.18</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.json</groupId>
+      <artifactId>json</artifactId>
+      <version>20201115</version>
+    </dependency>
+
+    <dependency>
       <groupId>com.github.amr</groupId>
       <artifactId>mimetypes</artifactId>
       <version>0.0.3</version>
